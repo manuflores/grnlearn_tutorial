@@ -29,3 +29,5 @@ To do this, run the following command:
 
 
 #### Run it in google collab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/manuflores/grnlearn_tutorial/)
