@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import rcParams
@@ -334,16 +335,6 @@ def plot_kmeans(kmeans, X, n_clusters=4, rseed=0, ax=None):
              for i, center in enumerate(centers)]
     for c, r in zip(centers, radii):
         ax.add_patch(plt.Circle(c, r, fc='#CCCCCC', lw=3, alpha=0.5, zorder=1))
-
-        
-@numba.jit(nopython=True)
-def draw_bs_sample(data):
-    """
-    Draw a bootstrap sample from a 1D data set.
-    
-    Wrapper from J. Bois' BeBi103 course. 
-    """
-    return np.random.choice(data, size=len(data))
 
 
 def net_stats(G):
