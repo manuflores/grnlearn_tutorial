@@ -1,0 +1,22 @@
+name: grn
+channels:
+   - defaults
+   - anaconda
+   - conda-forge
+dependencies:
+   - python>=3.7
+   - numpy
+   - scipy
+   - pandas
+   - matplotlib
+   - seaborn
+   - jupyter
+   - ipykernel
+   - scikit-learn
+   - bokeh=1.3.4
+   - holoviews=1.12.6=py_0
+   - hvplot=0.5.2=py_0
+   - networkx=2.3
+   - python-louvain=0.13
+   - umap-learn=0.3.10
+   - keras=2.3.1
