@@ -7,7 +7,7 @@ We are going to learn how to apply simple supervised learning models to learn th
 
 ## Installation
 
-### Run the tutorial locally
+### Run the tutorial locally
 
 All of the code use in this repo is python-based.
 The library requirements can be installed by executing the following command using
@@ -23,11 +23,11 @@ To do this, run the following command:
 
 ### Run the tutorial on the cloud 
 
-#### Run it in binder 
+#### Option 1: Run it in binder 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/manuflores/grnlearn_tutorial/master)
 
 
-#### Run it in google collab
+#### Option 2: Run it in google collab
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/manuflores/grnlearn_tutorial/)
