@@ -1,0 +1,472 @@
+#
+#	person: regulondb team
+#	email:  regulondb@ccg.unam.mx
+#	contact web page: http://regulondb.ccg.unam.mx/menu/about_regulondb/contact_us
+#
+#
+# release: 9.4 date: 05-08-2017
+# ___________________________________________________________________________
+#
+# columns:
+#  (1) transcription factor (tf) name
+#  (2) tf  regulated by tf
+#  (3) regulatory effect of the tf on the regulated gene (+ activator, - repressor, +- dual, ? unknown)
+#  (4) evidence that supports the existence of the regulatory interaction
+#  (5) evidence type [weak, strong, confirmed] for details see: http://regulondb.ccg.unam.mx/evidenceclassification
+TF	TG	regType	source	evidence	
+acrr	acrr	-	[aibscs, bce, bpp, gea, hibscs]	strong	
+acrr	flhc	-	[gea, hibscs]	weak	
+acrr	flhd	-	[gea, hibscs]	weak	
+acrr	mara	-	[bpp, gea, hibscs]	strong	
+acrr	marr	-	[bpp, gea, hibscs]	strong	
+acrr	soxr	-	[bpp, gea, hibscs]	strong	
+acrr	soxs	-	[bpp, gea, hibscs]	strong	
+ada	ada	+	[bpp, gea, hibscs, sm]	strong	
+ada	ada	-	[bpp, gea, hibscs, sm]	strong	
+ada	aidb	+	[bpp, gea, hibscs]	strong	
+adiy	gadx	+	[bpp]	strong	
+agar	agar	-	[bpp, gea, hibscs]	strong	
+aidb	aidb	-	[bpp, gea]	strong	
+alas	alas	-	[bpp, gea]	strong	
+allr	alls	-	[bce, bpp, gea, sm]	strong	
+alsr	rpir	-	[gea]	weak	
+arac	arac	+	[bpp, gea, hibscs, sm]	strong	
+arac	arac	-	[bce, bpp, gea, hibscs, sm]	strong	
+arca	beti	-	[bce, gea]	weak	
+arca	dpia	+	[aibscs]	weak	
+arca	fnr	-	[gea]	weak	
+arca	gade	+	[bpp, gea]	strong	
+arca	gadx	+	[aibscs, gea]	weak	
+arca	lldr	-	[aibscs, bpp, gea, hibscs]	strong	
+arca	puur	-	[aibscs, gea]	weak	
+arca	xylr	+	[aibscs, gea]	weak	
+argp	argp	-	[gea, hibscs, ic]	weak	
+argp	dnaa	+	[bpp, gea, ic]	strong	
+argr	argr	-	[aibscs, bpp, gea, hibscs]	strong	
+arsr	arsr	-	[aibscs, bpp, gea]	strong	
+ascg	prpr	-	[aibscs, bpp, gea]	strong	
+asnc	asnc	-	[gea]	weak	
+baer	baer	+	[aibscs, bpp, gea]	strong	
+basr	csgd	+	[bpp, gea, hibscs]	strong	
+basr	puta	-	[bpp, hibscs]	strong	
+basr	qseb	+	[bpp, gea]	strong	
+beti	beti	-	[gea, hibscs]	weak	
+crp	arac	+	[bpp, gea, hibscs, sm]	strong	
+crp	caif	+	[bce, gea]	weak	
+crp	chbr	+	[aibscs, bpp, gea, hibscs]	strong	
+crp	comr	-	[bpp, gea, hibscs]	strong	
+crp	crp	+	[bpp, hibscs, sm]	strong	
+crp	crp	-	[aibscs, bpp, gea, hibscs, sm]	strong	
+crp	csgd	+	[aibscs, gea]	weak	
+crp	cytr	+-	[bpp, gea, hibscs]	strong	
+crp	dcur	+	[bpp, hibscs]	strong	
+crp	dpia	-	[aibscs]	weak	
+crp	fear	+	[hibscs]	weak	
+crp	fis	+	[aibscs, gea]	weak	
+crp	fis	+-	[bpp, gea]	strong	
+crp	flhc	+	[bpp, gea, hibscs]	strong	
+crp	flhd	+	[bpp, gea, hibscs]	strong	
+crp	fucr	+	[aibscs, bpp, gea, sm]	strong	
+crp	fur	+	[hibscs, sm]	strong	
+crp	gade	-	[bpp, hibscs]	strong	
+crp	gadx	-	[gea, hibscs]	weak	
+crp	gals	+	[aibscs, bce, gea, hibscs]	weak	
+crp	glcc	+	[aibscs, gea]	weak	
+crp	glng	+	[hibscs]	weak	
+crp	glng	-	[aibscs, bpp, gea]	strong	
+crp	glpr	+	[bpp, gea, hibscs]	strong	
+crp	gutm	+	[aibscs, gea]	weak	
+crp	hupa	+	[bpp, gea]	strong	
+crp	hupb	+	[bpp, gea]	strong	
+crp	hyfr	+	[gea, hibscs]	weak	
+crp	idnr	+	[aibscs, gea, hibscs]	weak	
+crp	laci	+	[bpp, gea, hibscs]	strong	
+crp	lsrr	+	[bpp, gea, hibscs, sm]	strong	
+crp	mali	+	[aibscs, bce, bpp, gea, sm]	strong	
+crp	mali	-	[aibscs, bpp, gea, sm]	strong	
+crp	malt	+	[bpp, gea, hibscs]	strong	
+crp	mara	+	[aibscs, gea, imp]	weak	
+crp	marr	+	[aibscs, gea, imp]	weak	
+crp	maze	+	[bpp, hibscs, sm]	strong	
+crp	melr	+	[aibscs, bpp, gea, hibscs]	strong	
+crp	mhpr	+	[bpp, gea, hibscs]	strong	
+crp	mlc	+	[gea, hibscs]	weak	
+crp	mlc	-	[gea, hibscs]	weak	
+crp	mtlr	+	[bpp, hibscs]	strong	
+crp	nagc	+-	[bce, bpp, gea, hibscs]	strong	
+crp	ompr	+	[bpp, hibscs, sm]	strong	
+crp	ompr	-	[bpp, hibscs, sm]	strong	
+crp	oxyr	+	[gea, hibscs]	weak	
+crp	pdhr	+	[aibscs, gea, hibscs]	weak	
+crp	prpr	+	[bpp, gea, hibscs, sm]	strong	
+crp	puur	-	[hibscs, iep]	weak	
+crp	rbsr	+	[aibscs, gea]	weak	
+crp	rhar	+	[aibscs, bpp, gea, hibscs, sm]	strong	
+crp	rhas	+	[aibscs, bpp, gea, hibscs, sm]	strong	
+crp	srlr	+	[aibscs, gea]	weak	
+crp	tdca	+	[bce, bpp, gea, hibscs, sm]	strong	
+crp	uxur	+	[gea, hibscs]	weak	
+crp	xylr	+	[aibscs, gea, hibscs]	weak	
+crp	yiaj	-	[bpp, gea, hibscs]	strong	
+crp	zrar	+	[aibscs, gea]	weak	
+cadc	cadc	+	[gea]	weak	
+cdar	cdar	+	[gea]	weak	
+cecr	cecr	-	[bpp, gea, hibscs]	strong	
+chbr	chbr	+	[bpp, gea]	strong	
+chbr	chbr	-	[bpp, gea]	strong	
+cpxr	baer	+	[bpp, gea, ic]	strong	
+cpxr	cpxr	+	[bpp, gea, hibscs]	strong	
+cpxr	csgd	-	[bpp, gea, hibscs]	strong	
+cpxr	mara	+	[bpp, gea, hibscs]	strong	
+cpxr	marr	+	[bpp, gea, hibscs]	strong	
+cra	beti	+	[gea]	weak	
+cra	crp	+	[bpp, gea, sm]	strong	
+cra	csgd	+	[aibscs, bpp, gea, sm]	strong	
+cra	glcc	-	[aibscs, gea]	weak	
+cra	mara	-	[aibscs, gea]	weak	
+cra	marr	-	[aibscs, gea]	weak	
+cra	mtlr	-	[bpp, gea]	strong	
+cra	pdel	-	[aibscs, bpp, gea, hibscs]	strong	
+cra	pdhr	-	[aibscs, gea]	weak	
+csgd	csgd	+	[bpp, gea, hibscs]	strong	
+csgd	fliz	-	[aibscs, bpp]	strong	
+cspa	hns	+	[bpp]	strong	
+cusr	cusr	+	[bpp, gea, hibscs]	strong	
+cynr	cynr	-	[bpp, hibscs]	strong	
+cysb	cbl	+	[bpp, gea]	strong	
+cysb	cysb	-	[hibscs]	weak	
+cytr	cytr	-	[bpp, gea, hibscs, ic]	strong	
+dan	ttdr	+	[bpp]	strong	
+dcur	dpia	+	[bpp, hibscs]	strong	
+dhar	dhar	-	[gea]	weak	
+dinj-yafq	dinj	-	[bpp, hibscs, sm]	strong	
+dinj-yafq	yafq	-	[bpp, hibscs, sm]	strong	
+dnaa	dnaa	+-	[bpp, sm]	strong	
+dnaa	dnaa	-	[bpp, gea]	strong	
+dpia	appy	-	[gea, hibscs]	weak	
+dpia	dpia	+	[bpp, gea, hibscs]	strong	
+dsdc	dsdc	-	[gea]	weak	
+evga	evga	+	[aibscs, bpp, gea, hibscs]	strong	
+evga	gade	+	[bpp, gea]	strong	
+evga	ydeo	+	[aibscs, bpp, gea]	strong	
+exur	exur	-	[bpp, gea, hibscs]	strong	
+exur	uxur	-	[aibscs, gea]	weak	
+fnr	arca	+	[gea, hibscs]	weak	
+fnr	arca	-	[gea, hibscs]	weak	
+fnr	cadc	+	[aibscs, gea]	weak	
+fnr	caif	+	[bce, gea]	weak	
+fnr	dcur	+	[aibscs, gea]	weak	
+fnr	dpia	-	[aibscs]	weak	
+fnr	fhla	+	[bce, bpp, gea]	strong	
+fnr	fnr	-	[bce, bpp, gea, hibscs]	strong	
+fnr	gadw	-	[aibscs, gea]	weak	
+fnr	gadx	-	[aibscs, gea]	weak	
+fnr	hyfr	-	[gea, hibscs]	weak	
+fnr	nac	-	[gea]	weak	
+fnr	narl	-	[bce, bpp, hibscs]	strong	
+fnr	nikr	+	[gea, hibscs, sm]	strong	
+fnr	pdhr	+-	[aibscs, bce, gea]	weak	
+fnr	soxr	-	[gea]	weak	
+fnr	soxs	-	[gea]	weak	
+fnr	tdca	+	[aibscs, gea]	weak	
+fnr	yeil	-	[gea, hibscs]	weak	
+fnr	yqji	+	[aibscs, gea]	weak	
+fadr	accb	+	[aibscs, bpp, gea]	strong	
+fadr	fadr	+	[aibscs]	weak	
+fadr	iclr	+	[bpp, gea, sm]	strong	
+fhla	fhla	+	[bpp, gea, hibscs]	strong	
+fhla	hyfr	+	[gea]	weak	
+fis	crp	-	[bpp, gea, hibscs]	strong	
+fis	cspa	+	[aibscs, bpp, gea]	strong	
+fis	fis	-	[bpp, gea, hibscs, sm]	strong	
+fis	gadx	-	[aibscs, gea]	weak	
+fis	glcc	-	[aibscs, gea]	weak	
+fis	glng	+	[aibscs, bpp, gea]	strong	
+fis	hns	+	[bpp]	strong	
+fis	hupa	+	[bpp, gea]	strong	
+fis	hupb	-	[bpp, gea]	strong	
+fis	mara	+	[bpp, gea, sm]	strong	
+fis	marr	+	[bpp, gea, sm]	strong	
+fis	maze	+	[bpp, gea, sm]	strong	
+fis	mtlr	-	[aibscs, gea]	weak	
+fis	xylr	-	[aibscs, gea]	weak	
+flhdc	fliz	+	[bpp, gea, hibscs, sm]	strong	
+fliz	csgd	-	[bpp, gea]	strong	
+fliz	flhc	-	[bpp, gea]	strong	
+fliz	flhd	-	[bpp, gea]	strong	
+fliz	gade	-	[bpp, gea, sm]	strong	
+fliz	mlra	-	[bpp, gea, sm]	strong	
+fucr	fucr	+	[gea]	weak	
+fur	flhc	-	[aibscs]	weak	
+fur	flhd	-	[aibscs]	weak	
+fur	fnr	-	[gea]	weak	
+fur	fur	-	[bpp, hibscs]	strong	
+fur	metj	-	[aibscs]	weak	
+fur	nac	-	[gea]	weak	
+fur	purr	-	[aibscs]	weak	
+fur	soxr	-	[gea]	weak	
+fur	soxs	-	[gea]	weak	
+gade	gade	+	[bpp, gea, hibscs]	strong	
+gade	gadw	+	[bpp, gea]	strong	
+gade	gadx	+	[bpp, gea]	strong	
+gade	lrp	+	[gea]	weak	
+gade	rcsa	+	[bpp, gea]	strong	
+gade-rcsb	gadx	+	[bpp, gea, hibscs, sm]	strong	
+gadw	gade	+	[aibscs, gea, hibscs]	weak	
+gadw	gadw	-	[gea]	weak	
+gadw	gadx	+-	[bpp, gea, hibscs]	strong	
+gadw	gadx	-	[gea]	weak	
+gadx	gade	+	[aibscs, bpp, gea, hibscs]	strong	
+gadx	gadw	+	[gea]	weak	
+gadx	gadw	-	[gea]	weak	
+gadx	gadx	+	[bpp, gea, hibscs]	strong	
+gadx	hns	+	[gea]	weak	
+galr	galr	-	[bpp, gea, hibscs]	strong	
+galr	gals	-	[gea, hibscs]	weak	
+gals	galr	-	[gea, hibscs]	weak	
+gals	gals	-	[bce, gea]	weak	
+gcva	gcva	-	[aibscs, bce, bpp, gea, hibscs, ic, sm]	strong	
+glcc	glcc	-	[bce, gea, sm]	strong	
+gntr	idnr	-	[aibscs, gea, hibscs]	weak	
+gutm	gutm	+	[gea]	weak	
+gutm	srlr	+	[gea]	weak	
+gutr	gutm	-	[gea]	weak	
+gutr	srlr	-	[gea]	weak	
+h-ns	adiy	-	[bpp]	strong	
+h-ns	appy	-	[bpp, gea]	strong	
+h-ns	bglj	-	[bpp]	strong	
+h-ns	bola	-	[gea]	weak	
+h-ns	cadc	-	[bpp]	strong	
+h-ns	caif	-	[gea]	weak	
+h-ns	cspa	-	[aibscs, bpp, gea]	strong	
+h-ns	evga	-	[bpp]	strong	
+h-ns	flhc	+	[bpp, gea]	strong	
+h-ns	flhd	+	[bpp, gea]	strong	
+h-ns	fliz	+	[gea, imp]	weak	
+h-ns	gade	-	[bpp]	strong	
+h-ns	gadw	-	[bpp, gea]	strong	
+h-ns	gadx	-	[bpp, gea]	strong	
+h-ns	gutm	+	[gea]	weak	
+h-ns	hdfr	-	[bpp]	strong	
+h-ns	hns	-	[bpp, gea, hibscs]	strong	
+h-ns	leuo	-	[bpp, gea, hibscs]	strong	
+h-ns	lrp	-	[bpp, gea]	strong	
+h-ns	maze	+	[gea]	weak	
+h-ns	nhar	-	[gea]	weak	
+h-ns	rcsa	-	[gea]	weak	
+h-ns	rcsb	-	[bpp]	strong	
+h-ns	srlr	+	[gea]	weak	
+h-ns	stpa	-	[bce, bpp, gea]	strong	
+h-ns	ydeo	-	[bpp]	strong	
+h-ns	yjjq	-	[bpp]	strong	
+hcar	hcar	-	[aibscs, bpp, gea]	strong	
+hdfr	flhc	-	[bpp, gea]	strong	
+hdfr	flhd	-	[bpp, gea]	strong	
+higa	higa	-	[bpp, ihbce]	strong	
+higb-higa	higa	-	[bpp, ihbce]	strong	
+hipab	hipa	-	[bpp, gea, hibscs]	strong	
+hipab	hipb	-	[bpp, gea, hibscs]	strong	
+hipab	maze	-	[bpp, gea]	strong	
+hipb	hipa	-	[bpp, gea, hibscs]	strong	
+hipb	hipb	-	[bpp, gea, hibscs]	strong	
+hipb	maze	-	[aibscs, bpp, gea]	strong	
+hyfr	hyfr	+	[aibscs, gea]	weak	
+ihf	csgd	+	[bpp, gea]	strong	
+ihf	fhla	+	[bpp, gea, hibscs]	strong	
+ihf	fis	+	[bpp, gea, hibscs, sm]	strong	
+ihf	flhc	-	[hibscs]	weak	
+ihf	flhd	-	[hibscs]	weak	
+ihf	fnr	+	[bpp, gea, sm]	strong	
+ihf	hipa	+	[hibscs]	weak	
+ihf	hipb	+	[hibscs]	weak	
+ihf	ihfa	-	[bpp, hibscs]	strong	
+ihf	ihfb	-	[bpp, gea]	strong	
+ihf	ompr	-	[bpp, sm]	strong	
+ihf	tdca	+	[bce, bpp, hibscs, sm]	strong	
+ihf	yeil	+	[gea, hibscs]	weak	
+ihf	yiaj	-	[bpp, hibscs]	strong	
+iclr	iclr	-	[bpp, gea, hibscs]	strong	
+idnr	idnr	+	[aibscs, gea]	weak	
+ilvy	ilvy	-	[bce, bpp, gea, hibscs, ic]	strong	
+iscr	iscr	-	[bpp, gea, sm]	strong	
+leuo	bglj	+	[bpp]	strong	
+leuo	cadc	-	[gea]	weak	
+leuo	leuo	+	[bpp, gea, ic]	strong	
+leuo	leuo	+-	[bpp, gea, ic]	strong	
+leuo	yjjq	+	[bpp]	strong	
+lexa	dinj	-	[aibscs, gea]	weak	
+lexa	lexa	-	[bpp, hibscs]	strong	
+lexa	uvry	-	[aibscs, gea]	weak	
+lexa	yafq	-	[aibscs, gea]	weak	
+lldr	lldr	+	[aibscs, bpp, gea, sm]	strong	
+lldr	lldr	-	[aibscs, bpp, gea, hibscs, sm]	strong	
+lrha	flhc	-	[bpp, gea]	strong	
+lrha	flhd	-	[bpp, gea]	strong	
+lrha	lrha	+	[bpp, gea]	strong	
+lrp	aidb	-	[bpp, hibscs]	strong	
+lrp	lrp	-	[aibscs, bce, gea, hibscs, sm]	strong	
+lrp	malt	+	[gea]	weak	
+lrp	stpa	+	[bce, bpp, gea, hibscs]	strong	
+lrp	yeil	+	[gea, hibscs]	weak	
+lsrr	lsrr	-	[bpp, gea, sm]	strong	
+lysr	lysr	-	[gea]	weak	
+mali	mali	-	[bce, gea, sm]	strong	
+mara	decr	+	[aibscs]	weak	
+mara	mara	+	[aibscs, bpp, gea, hibscs]	strong	
+mara	marr	+	[aibscs, bpp, gea, hibscs]	strong	
+mara	puta	+	[gea]	weak	
+mara	rob	-	[bpp, gea, hibscs, sm]	strong	
+marr	mara	-	[aibscs, bpp, gea, hibscs, sm]	strong	
+marr	marr	-	[aibscs, bpp, gea, hibscs, sm]	strong	
+mata	ecpr	+	[bpp]	strong	
+mata	flhc	-	[bpp, gea]	strong	
+mata	flhd	-	[bpp, gea]	strong	
+mata	fliz	-	[bpp]	strong	
+maze	maze	-	[bce, gea, sm]	strong	
+maze-mazf	maze	-	[bce, gea, sm]	strong	
+melr	melr	+	[bpp, gea, sm]	strong	
+melr	melr	-	[bpp, gea, hibscs, sm]	strong	
+metj	metr	-	[bpp]	strong	
+metr	metr	-	[bpp, gea, hibscs]	strong	
+mlc	malt	-	[bce, gea, hibscs]	weak	
+mlc	mlc	-	[bce, gea, hibscs]	weak	
+mlra	cadc	+	[bpp, hibscs]	strong	
+mlra	csgd	+	[bpp, gea]	strong	
+mngr	mngr	-	[bpp, gea, hibscs]	strong	
+mode	narl	+	[bpp, gea, hibscs]	strong	
+mpra	mpra	-	[bpp]	strong	
+mqsa	csgd	-	[bpp, gea, hibscs]	strong	
+mqsa	mqsa	-	[bpp, hibscs, ihbce]	strong	
+mqsa	mqsr	-	[bpp, hibscs, ihbce]	strong	
+mraz	mraz	-	[aibscs, bpp, gea, sm]	strong	
+mtlr	mtlr	-	[gea]	weak	
+murr	murr	+-	[gea, hibscs]	weak	
+nac	asnc	-	[gea, hibscs]	weak	
+nac	fear	+	[ihbce]	weak	
+nac	nac	-	[bpp, gea, hibscs]	strong	
+nagc	chbr	-	[aibscs, bpp, gea, hibscs, sm]	strong	
+nagc	creb	-	[aibscs]	weak	
+nagc	nagc	-	[bpp, gea, sm]	strong	
+narl	caif	-	[gea]	weak	
+narl	dcur	-	[bpp, gea, hibscs]	strong	
+narl	dpia	-	[aibscs]	weak	
+narl	nikr	-	[gea]	weak	
+nemr	nemr	-	[aibscs, bpp, gea]	strong	
+nhar	nhar	+	[bce, bpp, gea]	strong	
+nhar	nhar	?	[bce, bpp, gea]	strong	
+nikr	nikr	-	[bpp]	strong	
+nimr	nimr	-	[bpp, gea, icwho]	strong	
+norr	norr	-	[aibscs, bpp, gea]	strong	
+nsrr	dsdc	-	[gea, hibscs]	weak	
+nsrr	fear	-	[gea, hibscs]	weak	
+nsrr	fhla	-	[gea, hibscs]	weak	
+nsrr	fliz	-	[gea, hibscs, sm]	strong	
+nsrr	ihfa	-	[gea, hibscs]	weak	
+nsrr	lrp	-	[gea, hibscs]	weak	
+nsrr	norr	-	[gea, hibscs]	weak	
+ntrc	cbl	+	[gea]	weak	
+ntrc	glng	+	[bpp, gea, hibscs, sm]	strong	
+ntrc	glng	-	[bpp, gea, hibscs, sm]	strong	
+ntrc	nac	+	[hibscs]	weak	
+ompr	bola	-	[bpp, hibscs]	strong	
+ompr	csgd	+	[bpp, gea, hibscs]	strong	
+ompr	flhc	-	[hibscs]	weak	
+ompr	flhd	-	[hibscs]	weak	
+oxyr	fur	+	[bpp, gea, hibscs]	strong	
+oxyr	oxyr	-	[bpp, gea, hibscs]	strong	
+paax	paax	-	[bpp, hibscs]	strong	
+pdel	pdel	+	[bpp, gea, ihbce]	strong	
+pdhr	mraz	-	[aibscs, bpp, gea]	strong	
+pdhr	pdhr	-	[aibscs, bce, bpp, gea, hibscs]	strong	
+pepa	pepa	-	[bpp]	strong	
+pgrr	tyrr	-	[bpp, gea, igi]	strong	
+phob	argp	+	[gea, hibscs]	weak	
+phob	cra	-	[gea]	weak	
+phob	cusr	+	[bpp, gea, hibscs]	strong	
+phob	fear	-	[bpp, gea, hibscs]	strong	
+phob	gadw	+	[gea]	weak	
+phob	gadx	+	[gea]	weak	
+phob	phob	+	[bpp, gea, hibscs]	strong	
+phob	prpr	-	[bpp, gea, hibscs]	strong	
+phob	ydfh	+	[bpp, gea, hibscs]	strong	
+phop	cysb	+	[aibscs, hibscs]	weak	
+phop	gade	+	[gea, hibscs]	weak	
+phop	gadw	+	[bpp, gea, hibscs]	strong	
+phop	phop	+	[aibscs, bpp, gea, hibscs]	strong	
+phop	phop	-	[aibscs, bpp, gea, hibscs]	strong	
+phop	rsta	+	[aibscs, bpp, gea, hibscs]	strong	
+phop	trer	-	[bpp, gea, hibscs, sm]	strong	
+phop	ydeo	-	[gea, hibscs, sm]	strong	
+prpr	prpr	-	[gea, hibscs]	weak	
+pspf	pspf	-	[bce, bpp, gea]	strong	
+purr	purr	-	[bce, bpp, gea, hibscs, sm]	strong	
+puta	puta	-	[bpp, gea, sm]	strong	
+puur	puur	-	[bpp, gea, ic, sm]	strong	
+qseb	flhc	+	[gea]	weak	
+qseb	flhd	+	[gea]	weak	
+qseb	qseb	+	[bpp, gea]	strong	
+rbsr	rbsr	-	[aibscs, bpp, gea]	strong	
+rcda	csgd	+	[bpp, gea, ic]	strong	
+rcnr	rcnr	-	[bpp, gea]	strong	
+rcsab	csgd	-	[gea]	weak	
+rcsab	flhc	-	[bpp, gea, sm]	strong	
+rcsab	flhd	-	[bpp, gea, sm]	strong	
+rcsab	rcsa	+	[aibscs, bce, bpp, gea, sm]	strong	
+rcsb	gadx	-	[bpp, gea, ihbce, sm]	strong	
+rcsb	ydeo	+	[gea]	weak	
+rcsb-bglj	leuo	+	[gea, hibscs, sm]	strong	
+relb	relb	-	[bpp, gea, hibscs]	strong	
+relb	rele	-	[bpp, gea, hibscs]	strong	
+relb-rele	relb	-	[bpp, gea, hibscs]	strong	
+relb-rele	rele	-	[bpp, gea, hibscs]	strong	
+rhar	rhar	+	[bce, bpp, gea, hibscs]	strong	
+rhar	rhas	+	[bce, bpp, gea, hibscs]	strong	
+rhas	rhar	+	[bpp, gea]	strong	
+rhas	rhar	?	[bpp, hibscs]	strong	
+rhas	rhas	+	[bpp, gea]	strong	
+rhas	rhas	?	[bpp, hibscs]	strong	
+rob	mara	+	[bpp, gea, hibscs, sm]	strong	
+rob	marr	+	[bpp, gea, hibscs, sm]	strong	
+rob	rob	-	[bpp, gea, hibscs]	strong	
+rsta	csgd	-	[bpp, gea, hibscs]	strong	
+rutr	gadw	-	[bpp, gea]	strong	
+rutr	gadx	-	[bpp, gea]	strong	
+rutr	nemr	-	[aibscs, bpp, gea]	strong	
+rutr	rutr	-	[aibscs, bpp, gea, sm]	strong	
+sdia	gadw	+	[gea]	weak	
+sgrr	sgrr	-	[bpp, gea, hibscs, sm]	strong	
+soxr	soxr	-	[bpp, gea]	strong	
+soxr	soxs	+	[bpp, gea]	strong	
+soxs	fur	+	[bpp, gea, hibscs]	strong	
+soxs	mara	+	[bpp, gea, hibscs]	strong	
+soxs	marr	+	[bpp, gea, hibscs]	strong	
+soxs	rob	-	[bpp, hibscs]	strong	
+soxs	soxs	-	[bpp, gea]	strong	
+stpa	leuo	-	[gea]	weak	
+stpa	stpa	-	[gea]	weak	
+sutr	fliz	-	[aibscs, bpp, gea]	strong	
+sutr	sutr	+	[bpp, gea, hibscs]	strong	
+sutr	sutr	-	[bpp, gea, hibscs]	strong	
+tdca	tdca	+	[bce, gea, sm]	strong	
+tdcr	tdca	+	[bce, sm]	strong	
+torr	gadx	-	[aibscs, gea]	weak	
+torr	torr	-	[bce, bpp, gea, hibscs, sm]	strong	
+trpr	trpr	-	[bpp, gea, hibscs]	strong	
+tyrr	tyrr	-	[gea, hibscs]	weak	
+uidr	uidr	-	[gea]	weak	
+uxur	exur	-	[hibscs]	weak	
+uxur	uxur	-	[aibscs, gea]	weak	
+xylr	arac	-	[aibscs, bpp, gea]	strong	
+xylr	xylr	+	[bpp, gea, hibscs]	strong	
+ydeo	gade	+	[bpp, gea, ihbce]	strong	
+ydeo	gadw	+	[bpp, gea, ihbce]	strong	
+ydeo	ydeo	-	[gea]	weak	
+yedw	cusr	+	[hibscs]	weak	
+yefm	yefm	-	[bpp, gea, hibscs]	strong	
+yefm-yoeb	yefm	-	[bpp, gea, hibscs]	strong	
+yeil	yeil	+	[gea]	weak	
+yiaj	yiaj	-	[bce, gea]	weak	
+yjjq	flhc	-	[aibscs, gea, sm]	strong	
+yjjq	flhd	-	[aibscs, gea, sm]	strong	
+yqji	yqji	-	[bpp, gea, hibscs, sm]	strong	
+zrar	zrar	+	[bpp, gea, hibscs]	strong	

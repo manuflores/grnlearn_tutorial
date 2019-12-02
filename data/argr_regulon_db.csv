@@ -1,0 +1,39 @@
+tf,tg,regtype,source,evidence
+argr,arga,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,argb,-,"[aibscs, bce, bpp, gea, sm]",weak
+argr,argc,-,"[aibscs, bce, bpp, gea, sm]",weak
+argr,argd,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,arge,-,"[aibscs, bce, bpp, gea, sm]",weak
+argr,argf,-,"[aibscs, bce, bpp, gea, sm]",weak
+argr,argg,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,argh,-,"[aibscs, bce, bpp, gea, sm]",weak
+argr,argi,-,"[aibscs, bce, bpp, gea]",weak
+argr,argr,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,arti,-,"[aibscs, bpp, gea, sm]",weak
+argr,artj,-,"[aibscs, bpp, gea, sm]",weak
+argr,artm,-,"[aibscs, bpp, gea, sm]",weak
+argr,artp,-,"[aibscs, bpp, gea, sm]",weak
+argr,artq,-,"[aibscs, bpp, gea, sm]",weak
+argr,asta,+,"[aibscs, bpp, gea]",weak
+argr,astb,+,"[aibscs, bpp, gea]",weak
+argr,astc,+,"[aibscs, bpp, gea]",weak
+argr,astd,+,"[aibscs, bpp, gea]",weak
+argr,aste,+,"[aibscs, bpp, gea]",weak
+argr,cara,-,"[aibscs, bpp, gea, hibscs, sm]",weak
+argr,carb,-,"[aibscs, bpp, gea, hibscs, sm]",weak
+argr,gltb,-,"[bpp, gea, hibscs]",strong
+argr,gltd,-,"[bpp, gea, hibscs]",strong
+argr,gltf,-,"[bpp, gea, hibscs]",strong
+argr,hisj,-,"[aibscs, bpp, gea, sm]",weak
+argr,hism,-,"[aibscs, bpp, gea, sm]",weak
+argr,hisp,-,"[aibscs, bpp, gea, sm]",weak
+argr,hisq,-,"[aibscs, bpp, gea, sm]",weak
+argr,infb,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,lyso,-,"[bpp, gea, sm]",strong
+argr,mety,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,nusa,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,pnp,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,rbfa,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,rimp,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,rpso,-,"[aibscs, bpp, gea, hibscs]",weak
+argr,trub,-,"[aibscs, bpp, gea, hibscs]",weak

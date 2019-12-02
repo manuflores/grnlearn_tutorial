@@ -1,0 +1,44 @@
+tf,tg,regtype,source,evidence
+soxr,fumc,+,"[bpp, gea]",strong
+soxr,soxr,-,"[bpp, gea]",strong
+soxr,soxs,+,"[bpp, gea]",strong
+soxs,acna,+,"[bpp, gea, hibscs]",strong
+soxs,acra,+,"[bpp, gea, hibscs]",strong
+soxs,acrb,+,"[bpp, gea, hibscs]",strong
+soxs,acrz,+,"[gea, ihbce]",weak
+soxs,flda,+,"[bpp, gea, hibscs]",strong
+soxs,fldb,+,"[gea, hibscs]",weak
+soxs,fpr,+,"[bpp, gea, hibscs]",strong
+soxs,fumc,+,"[bpp, gea]",strong
+soxs,fur,+,"[bpp, gea, hibscs]",strong
+soxs,inaa,+,"[bpp, gea, hibscs]",strong
+soxs,mara,+,"[bpp, gea, hibscs]",strong
+soxs,marb,+,"[bpp, gea, hibscs]",strong
+soxs,marr,+,"[bpp, gea, hibscs]",strong
+soxs,micf,+,"[bce, bpp]",weak
+soxs,nfo,+,"[bce, gea, hibscs]",weak
+soxs,nfsa,+,"[bpp, gea, hibscs]",strong
+soxs,nfsb,+,"[bpp, gea, hibscs]",strong
+soxs,ompn,+,"[bpp, gea, hibscs, sm]",strong
+soxs,pgi,+,"[gea, hibscs]",weak
+soxs,poxb,+,"[gea, hibscs]",weak
+soxs,pqia,+,"[bpp, gea, hibscs, sm]",strong
+soxs,pqib,+,"[bpp, gea, hibscs, sm]",strong
+soxs,ptsg,+,"[bpp, gea, hibscs]",strong
+soxs,riba,+,"[bpp, gea, hibscs]",strong
+soxs,rimk,+,"[bpp, gea, hibscs]",strong
+soxs,rob,-,"[bpp, hibscs]",strong
+soxs,soda,+,"[bce, bpp, gea, hibscs]",weak
+soxs,soxs,-,"[bpp, gea]",strong
+soxs,tolc,+,"[aibscs, gea]",weak
+soxs,uof,+,"[bpp, gea, hibscs]",strong
+soxs,waay,+,"[bpp, gea, hibscs]",strong
+soxs,waaz,+,"[bpp, gea, hibscs]",strong
+soxs,ybjc,+,"[bpp, gea, hibscs]",strong
+soxs,ybjn,+,"[bpp, gea, hibscs]",strong
+soxs,ydbk,+,"[bpp, gea, hibscs, sm]",strong
+soxs,ygia,+,"[aibscs, gea]",weak
+soxs,ygib,+,"[aibscs, gea]",weak
+soxs,ygic,+,"[aibscs, gea]",weak
+soxs,zint,+,[gea],weak
+soxs,zwf,+,"[bpp, gea, hibscs, sm]",strong

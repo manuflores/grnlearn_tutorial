@@ -1,0 +1,32 @@
+tf,tg,regtype,source,evidence
+purr,cara,-,"[aibscs, bpp, gea]",weak
+purr,carb,-,"[aibscs, bpp, gea]",weak
+purr,coda,-,"[aibscs, gea, hibscs]",weak
+purr,codb,-,"[aibscs, gea, hibscs]",weak
+purr,cvpa,-,"[bce, bpp, gea, hibscs, sm]",weak
+purr,gcvh,-,"[aibscs, gea, hibscs]",weak
+purr,gcvp,-,"[aibscs, gea, hibscs]",weak
+purr,gcvt,-,"[aibscs, gea, hibscs]",weak
+purr,glnb,-,"[bce, gea, hibscs]",weak
+purr,glya,-,"[aibscs, bpp, gea, hibscs, sm]",weak
+purr,guaa,-,"[aibscs, bce, gea]",weak
+purr,guab,-,"[aibscs, bce, gea]",weak
+purr,hfld,-,"[aibscs, bpp, gea, hibscs]",weak
+purr,prs,-,"[bce, gea, hibscs]",weak
+purr,pura,-,"[bpp, gea, hibscs]",strong
+purr,purb,-,"[aibscs, bpp, gea, hibscs]",weak
+purr,purc,-,"[aibscs, bpp, gea, hibscs]",weak
+purr,purd,-,"[aibscs, bpp, gea, hibscs]",weak
+purr,pure,-,"[aibscs, bce, gea, hibscs]",weak
+purr,purf,-,"[bce, bpp, gea, hibscs, sm]",weak
+purr,purh,-,"[aibscs, bpp, gea, hibscs]",weak
+purr,purk,-,"[aibscs, bce, gea, hibscs]",weak
+purr,purl,-,"[aibscs, bce, gea, hibscs]",weak
+purr,purm,-,"[aibscs, gea, hibscs, sm]",weak
+purr,purn,-,"[aibscs, gea, hibscs, sm]",weak
+purr,purr,-,"[bce, bpp, gea, hibscs, sm]",weak
+purr,pyrc,-,"[bpp, gea, hibscs, sm]",strong
+purr,pyrd,-,"[aibscs, bce, gea, hibscs]",weak
+purr,spea,-,"[bce, gea, hibscs]",weak
+purr,speb,-,"[bce, gea, hibscs]",weak
+purr,ubix,-,"[bce, bpp, gea, hibscs, sm]",weak
