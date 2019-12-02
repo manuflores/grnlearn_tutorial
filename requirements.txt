@@ -1,0 +1,13 @@
+pymc3==3.3
+bokeh==1.0.4
+emcee==2.2.1
+holoviews==1.11.0
+imbalanced-learn==0.3.1
+Keras==2.1.5
+librosa==0.6.3
+networkx==2.1
+numba==0.41.0
+python-louvain==0.10
+tensorflow==1.13.1
+squarify==0.4
+umap-learn==0.3.7
