@@ -1,4 +1,4 @@
-# Learning simple genetic networks tutorial for PyData LA 2019
+# PyData LA 2K19 tutorial : Learning simple genetic networks
 
 Welcome to the tutorial repo! 
 
