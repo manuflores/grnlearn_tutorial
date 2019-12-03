@@ -18,7 +18,17 @@ The library requirements can be installed by executing the following command usi
 Alternatively you can also install the libraries by creating a conda environment.
 To do this, run the following command: 
 
-```conda env create -f grn.yml```
+```
+# to create environment
+$ conda env create -f grn.yml python=3.7
+
+# to activate environment
+$ conda activate grn
+
+# to deactivate env
+$ conda deactivate
+
+```
 
 
 ### Run the tutorial on the cloud 
