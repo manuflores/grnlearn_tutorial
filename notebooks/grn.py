@@ -30,6 +30,8 @@ from keras.utils import np_utils
 from keras.metrics import categorical_accuracy
 from keras.layers import Dropout
 import keras.backend as K
+import scipy.stats as st
+
 
 filterwarnings('ignore')
 
@@ -478,3 +480,174 @@ def download_and_preprocess_data(org, data_dir = None, variance_ratio = 0.8,
 
     # Export dataset 
     denoised_df.to_csv(output_path + 'denoised_' + org + '.csv', index = False)
+
+
+def lower_strings(string_list):
+    """
+    Helper function to return lowercase version of a list of strings.
+    """
+    return [str(x).lower() for x in string_list]
+
+
+def load_gene_ontology_data(): 
+    
+    """Load the GO annotation dataset of E. coli K-12. """
+    
+    gene_ontology_data = pd.read_csv('../data/GO_annotations_ecoli.csv')
+    
+    return gene_ontology_data
+
+def get_GO_gene_set(gene_ontology_data, test_gene_list):
+    
+    """
+    Given a list of genes of interest and the Gene Ontology annotation dataset,
+    filter the Gene Ontology dataset for E. coli to make an enrichment analysis.
+    _____________________________________________________________________________
+    
+    inputs~
+    
+    gene_ontology_data: GO annotation dataset.
+    test_gene_list: List of genes of interest.  
+    
+    outputs~
+    
+    GO_gene_set:Filtered GO annotation dataset corresponding to the test gene set. 
+    
+    """
+    gene_ontology_data = load_gene_ontology_data()
+    
+    #Call the sortSeq library to lower the gene names
+    gene_ontology_data.gene_name = lower_strings(gene_ontology_data.gene_name.values)
+    
+    #Call the sortSeq library filter only the GO data from the test gene list 
+    GO_gene_set = get_gene_data(gene_ontology_data, 'gene_name', test_gene_list)
+    
+    return GO_gene_set
+
+def get_hi_GOs(GO_gene_set):
+    
+    """
+    Get the GO IDs whose counts are above the 5% of the total entries of the GO_gene_set.
+    
+    This allows to reduce our search space and only calculate enrichment p-values for highly 
+    represented GOs.
+    
+    * GO: gene ontology 
+    
+    -------------------------------------------------------
+    input~ GO_gene_set :Filtered GO annotation dataset corresponding to the test gene set. 
+    
+    output ~ GO IDs that represent > 10% of the dataset. 
+    """
+    #Treshold = get only the GOs whose counts > 10% of the total counts of GOs in the gene set 
+    thr = int(GO_gene_set.shape[0] * 0.10)
+    
+    #Check that GO_gene_set is not empty.
+    if GO_gene_set.shape[0] > 1:
+    
+        #Get the indices of the GOs that are above the threshold 
+        hi_indices = GO_gene_set.GO_ID.value_counts().values > thr
+
+
+        #Filter and get the GO IDs that are above threshold
+        hi_GO_ids = GO_gene_set.GO_ID.value_counts().loc[hi_indices].index.values
+        
+        #Check that there are GO_IDs above the threshold
+        if len(hi_GO_ids) > 0:
+
+            return hi_GO_ids
+
+        else: 
+            print('No enriched functions found.')
+                
+    else: 
+        
+        print('No enriched functions found.')
+
+def get_hyper_test_p_value(gene_ontology_data, GO_gene_set, hi_GO_ids):
+    
+    """
+    Given a list of GO IDs, calculate its p-value according to the hypergeometric distribution. 
+    -------------------------------------------------------
+    inputs~
+    
+    gene_ontology_data: GO annotation dataset.
+    GO_gene_set: Filtered GO annotation dataset corresponding to the test gene set. 
+    hi_GO_ids: Overrepresented GO IDs. 
+    
+    outputs~
+    
+    summary_df: Summary dataframe with the statistically overrepresented GO IDs w/ their reported p-value
+                and associated cofit genes. 
+    
+    """
+    
+    if hi_GO_ids is not None and len(hi_GO_ids) > 0: 
+        n = GO_gene_set.shape[0] # sample size
+
+        M = gene_ontology_data.shape[0] # total number of balls ~ total number of annotations
+
+        p_vals = np.empty(len(hi_GO_ids))
+
+        for i, hi_GO in enumerate(hi_GO_ids):
+
+            # White balls drawn : counts of the hiGO in the GO_gene_set dataset
+            w = pd.value_counts(GO_gene_set['GO_ID'].values, sort=False)[hi_GO]
+
+            # Black balls drawn : counts of all of the GO IDs not corresponding to the specific hi_GO
+            b = GO_gene_set.shape[0] - w
+
+            # Total number of white balls in the bag : counts of the hiGO in the whole genome
+            w_genome = pd.value_counts(gene_ontology_data['GO_ID'].values, sort=False)[hi_GO]
+
+            # Total number of black balls in the bag : counts of non-hiGO IDs in the whole genome
+            b_genome = gene_ontology_data.shape[0] - w_genome
+
+            #Initialize an empty array to store the PMFs values
+            hypergeom_pmfs = np.empty(n - w + 1)
+
+            #Get all of the PMFs that are >= w (overrepresentation test)
+
+            pmfs = st.hypergeom.pmf(k = np.arange(w, n+1), N = n, n = w_genome, M = M)
+
+            #P-value = PMFs >= w 
+            p_val = hypergeom_pmfs.sum()
+
+            #Store p_value in the list 
+            p_vals[i] = p_val
+
+        #Filter the p_values < 0.05 
+        significant_indices = p_vals < 0.05
+        significant_pvals = p_vals[significant_indices]
+        #Get significant GO_IDs 
+        significant_GOs = hi_GO_ids[significant_indices]
+
+        GO_summary_df = pd.DataFrame({ 'GO_ID': significant_GOs, 'p_val': significant_pvals })
+
+        #Make a left inner join
+        summary_df = pd.merge(GO_summary_df, GO_gene_set, on = 'GO_ID', how = 'inner')
+        
+        print('Enrichment test ran succesfully!')
+        
+        return summary_df
+    
+    else: 
+        
+        print('Enrichment test did not run.')
+
+
+def get_GO_enrichment(gene_list):
+
+    """
+    Wrapper function to perform GO enrichment test. 
+    """
+
+    go = load_gene_ontology_data()
+
+    go_gene_set = get_gene_data(go, 'gene_name', gene_list)
+
+    hi_go_ids = get_hi_GOs(go_gene_set)
+
+    enrichment_report = get_hyper_test_p_value(go, go_gene_set, hi_go_ids)
+
+    return enrichment_report
