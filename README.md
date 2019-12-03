@@ -1,4 +1,4 @@
-# Learning simple genetic networks tutorial for PyData LA 2019
+# PyData LA 2K19 tutorial : Learning simple genetic networks
 
 Welcome to the tutorial repo! 
 
@@ -23,18 +23,20 @@ To do this, run the following command:
 
 ### Run the tutorial on the cloud 
 
-#### Option 1: Run it in binder 
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/manuflores/grnlearn_tutorial/master)
-
-You can run the tutorial in binder by clicking the link above. 
-
-
-#### Option 2: Run it in Google colab
+#### Option 1: Run it in Google colab
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/manuflores/grnlearn_tutorial/)
 
-You can also run the tutorial in the Google Colab servers by clicking the badge above. 
+You can run the tutorial in the Google Colab servers by clicking the badge above. 
+
+
+#### Option 2: Run it in binder 
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/manuflores/grnlearn_tutorial/master)
+
+You can also run the tutorial in binder by clicking the link above. 
+
+
 
 ## License
 
