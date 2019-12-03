@@ -2,7 +2,7 @@
 
 Welcome to the tutorial repo! 
 
-We are going to learn how to apply simple supervised learning models to learn the structure of simple genetic networks ! 
+We are going to learn how to apply simple supervised learning models to learn the structure of simple genetic networks.
 
 
 ## Installation
