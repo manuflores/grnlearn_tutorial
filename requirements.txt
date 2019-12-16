@@ -4,7 +4,7 @@ imbalanced-learn==0.3.1
 Keras==2.1.5
 networkx==2.1
 python-louvain==0.13
-tensorflow==1.13.1
+tensorflow==1.15.0
 squarify==0.4
 umap-learn==0.3.7
 numpy==1.17.2
